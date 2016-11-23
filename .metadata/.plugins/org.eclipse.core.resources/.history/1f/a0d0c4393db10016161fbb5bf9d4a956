@@ -1,0 +1,16 @@
+package com.struts.tutorial.action2;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class Action03 extends ActionSupport {
+	
+	public String formView(){
+		return "success";
+	}
+	
+	@Override
+	public String execute() throws Exception {
+
+		return SUCCESS;
+	}
+}

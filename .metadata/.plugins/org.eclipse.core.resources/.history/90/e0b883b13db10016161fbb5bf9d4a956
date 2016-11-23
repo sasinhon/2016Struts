@@ -1,0 +1,19 @@
+package com.struts.tutorial.action2;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class Action03 extends ActionSupport {
+	private String id, pw, msg;
+	
+	
+	
+	public String formView(){
+		return "success";
+	}
+	
+	@Override
+	public String execute() throws Exception {
+		msg = "id:"+id+",pw:"+pw+"로 로그인;
+		return SUCCESS;
+	}
+}

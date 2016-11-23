@@ -1,0 +1,9 @@
+package com.struts.tutorial.action2;
+
+public class Action03  {
+	
+	public String formView(){
+		return "success";
+	}
+	
+}

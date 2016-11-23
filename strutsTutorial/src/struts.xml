@@ -48,6 +48,16 @@
 				<result name="input">/login2/form.jsp</result>
 				<result name="error">/err.jsp</result>
 			</action>
+			<action name="test31" class="com.struts.tutorial.action2.Action03" method="formView">
+				<result name="input">/login3/form.jsp</result>
+			</action>
+			<action name="test32" class="com.struts.tutorial.action2.Action03" >
+				<interceptor-ref name="params" />
+				<interceptor-ref name="validation" />				
+				<interceptor-ref name="workflow" />				
+				<result name="success">/login3/result.jsp</result>
+				<result name="input">/login3/form.jsp</result>
+			</action>
 		</package>     
      </struts>
 

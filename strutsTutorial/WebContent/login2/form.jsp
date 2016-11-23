@@ -13,9 +13,12 @@
 </head>
 <body>
 <h1>로그인 페이지</h1>
-	<form action="test22.action" >
-	<p>id:<input type="text" name="id" value="${bean.id }"/></p>
-	<p>pw:<input type="text" name="pw" /></p>
+<%
+	Map<String,List> map=(Map<String,List>)request.getAttribute("fieldErrors");
+%>
+	<form action="test32.action" >
+	<p>id:<input type="text" name="id" value="${id }"/><%=map.get("id") %></p>
+	<p>pw:<input type="text" name="pw" value="${pw }"/>${fieldErrors.pw }</p>
 	<p>
 		<button type="submit">LOGIN</button>
 		<button type="reset">RESET</button>
