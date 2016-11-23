@@ -1,0 +1,8 @@
+package com.struts.tutorial.model;
+
+public class JavaBean {
+
+	private String id, pw;
+	
+	
+}

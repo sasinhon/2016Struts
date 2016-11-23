@@ -1,0 +1,19 @@
+package com.one.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GuestDao {
+
+	public GuestDao() {
+		
+	}
+	public List<GuestVo> listAll(){
+		List<GuestVo> list = new ArrayList<GuestVo>();
+				Rowmapper mapper = new Rowmapper(){
+					
+				}
+	};
+				return new SqlTemplate().executeList("select * from guest", magger);
+	}
+}

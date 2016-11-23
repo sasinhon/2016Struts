@@ -1,0 +1,11 @@
+package com.struts.tutorial.action;
+
+public class TutorialAction02 {
+	
+	
+	public String execute(){
+		String msg="tutorial msg";
+		
+		return "success";
+	}
+}

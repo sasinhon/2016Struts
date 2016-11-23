@@ -1,0 +1,20 @@
+<%@ page import="java.util.*, com.one.model.*"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
+<table>
+	<tr>
+		<td>sabun</td>
+		<td>name</td>
+		<td>nalja</td>
+		<td>pay</td>
+	</tr>
+	<%
+		request.getAttribute("alist");
+	%>
+	<tr>
+		<td>sabun</td>
+		<td>name</td>
+		<td>nalja</td>
+		<td>pay</td>
+	</tr>
+</table>

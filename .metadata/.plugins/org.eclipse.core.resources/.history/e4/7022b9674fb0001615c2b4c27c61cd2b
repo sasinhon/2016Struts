@@ -1,0 +1,15 @@
+package com.one.model;
+
+import java.util.ArrayList;
+
+public class GuestDao {
+
+	public GuestDao() {
+		
+	}
+	public List listAll(){
+		List list = new ArrayList<GuestVo>()
+				
+				return null;
+	}
+}

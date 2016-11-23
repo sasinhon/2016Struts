@@ -1,0 +1,5 @@
+package com.one.model;
+
+public class GuestDao {
+
+}

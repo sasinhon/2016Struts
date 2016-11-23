@@ -1,0 +1,29 @@
+package com.one.controller;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.Buffer;
+import java.util.Enumeration;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/edit.do")
+public class UpdateController extends HttpServlet {
+	
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		Enumeration<String> params=request.getParameterNames();
+//		while(params.hasMoreElements()){
+//			String param = params.nextElement();
+//			System.out.println(param+":"+request.getParameter(param));
+//		}
+		BufferedReader br = new BufferedReader(new InputStreamReader(request.getInputStream()));
+		String data = br.readLine();
+		System.out.println(data);
+		
+	}
+
+}

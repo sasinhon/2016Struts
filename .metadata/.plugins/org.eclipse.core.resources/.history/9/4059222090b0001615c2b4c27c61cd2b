@@ -1,0 +1,5 @@
+package com.hb.struts;
+
+public class HelloAction {
+
+}
